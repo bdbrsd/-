@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>অ্যাডমিন প্যানেল - সুইট স্লিপ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .sidebar {
+      height: 100vh;
+      width: 220px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #5e60ce; /* প্রাইমারি পার্পল */
+      padding-top: 20px;
+      color: white;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .sidebar a {
+      padding: 14px 20px;
+      display: block;
+      color: #dcdde1;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #7478e8;
+      color: #fff;
+    }
+
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #fff;
+      padding: 15px 20px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 6px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #2d3436;
+    }
+
+    .header div {
+      background-color: #5e60ce;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-left: 6px solid #5e60ce;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      flex: 1;
+      min-width: 200px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #5e60ce;
+    }
+
+    .card p {
+      font-size: 32px;
+      margin-top: 10px;
+      color: #2f3542;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .main {
+        margin-left: 0;
+      }
+
+      .stats {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>🛏 সুইট স্লিপ</h2>
+    <a href="#">🏠 ড্যাশবোর্ড</a>
+    <a href="#">📦 প্রোডাক্ট</a>
+    <a href="#">🛒 অর্ডার</a>
+    <a href="#">👥 ব্যবহারকারী</a>
+    <a href="#">⚙️ সেটিংস</a>
+    <a href="#">🚪 লগ আউট</a>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>অ্যাডমিন ড্যাশবোর্ড</h1>
+      <div>👤 অ্যাডমিন</div>
+    </div>
+
+    <div class="stats">
+      <div class="card">
+        <h3>মোট অর্ডার</h3>
+        <p>১২০</p>
+      </div>
+      <div class="card">
+        <h3>প্রোডাক্ট সংখ্যা</h3>
+        <p>৫৫</p>
+      </div>
+      <div class="card">
+        <h3>নতুন ব্যবহারকারী</h3>
+        <p>৩৫</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
