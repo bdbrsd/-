@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সুইট স্লিপ - বেডিং শপ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff9f5;
+            color: #3b3b3b;
+        }
+        header {
+            background-color: #a29bfe;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: linear-gradient(to right, #ffeaa7, #fab1a0);
+            padding: 80px 20px;
+            color: #2d3436;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 28px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .product {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            color: #6c5ce7;
+        }
+        .product p {
+            font-size: 16px;
+            color: #636e72;
+        }
+        .contact {
+            background-color: #fceae8;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact input, .contact textarea {
+            width: 90%;
+            max-width: 400px;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .contact button {
+            background-color: #fd79a8;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #e84393;
+        }
+        footer {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>সুইট স্লিপ</h1>
+    <nav>
+        <a href="#">হোম</a>
+        <a href="#">প্রোডাক্ট</a>
+        <a href="#">যোগাযোগ</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>আপনার স্বপ্নের মতো ঘুম, আমাদের বেডিং প্রোডাক্টস দিয়ে!</h2>
+</div>
+
+<section class="products">
+    <div class="product">
+        <img src="https://via.placeholder.com/250x150?text=বেডিং+১" alt="বেডিং সেট ১">
+        <h3>কটন বেডিং সেট</h3>
+        <p>মূল্য: ২,৫০০ টাকা</p>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250x150?text=বেডিং+২" alt="বেডিং সেট ২">
+        <h3>সিল্ক বেডিং সেট</h3>
+        <p>মূল্য: ৪,২০০ টাকা</p>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/250x150?text=বেডিং+৩" alt="বেডিং সেট ৩">
+        <h3>ওয়াটারপ্রুফ ম্যাট্রেস</h3>
+        <p>মূল্য: ৩,০০০ টাকা</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>যোগাযোগ করুন</h2>
+    <form>
+        <input type="text" placeholder="আপনার নাম" required><br>
+        <input type="email" placeholder="ইমেইল" required><br>
+        <textarea placeholder="মেসেজ দিন" rows="5" required></textarea><br>
+        <button type="submit">পাঠান</button>
+    </form>
+</section>
